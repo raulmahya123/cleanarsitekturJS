@@ -1,7 +1,8 @@
 {
-    "*.js": [
-      "standard --fix",
-      "git add",
-      "git add ."
-    ]
+    "src/**/*.js": ["eslint --fix", "git add"],
+    "src/**/*.ts": ["eslint --fix", "git add"],
+    "src/**/*.jsx": ["eslint --fix", "git add"],
+    "src/**/*.tsx": ["eslint --fix", "git add"],
+    "package.json": ["prettier --write", "git add"]
   }
+  
