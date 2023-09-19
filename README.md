@@ -16,4 +16,14 @@ pertama installasi npm i standard -D fungsinya menginstall package json untuk pe
 A  .gitignore(sudah dalam area kita)
 
 
-menambahkan di packgae jsonnya lint-staged
+menambahkan di packgae jsonnya   "lint-staged": {
+    "*.js": [
+      "standard"
+    ]
+  },
+
+  contoh casenya ketika error gunakan npx lint-staged ketuan errornya
+
+npm install husky dan aktifkannya di package_json
+
+husky disini itu memaksa kita saat error atau ada funcion tdk terpakai tidak bisa dipush
