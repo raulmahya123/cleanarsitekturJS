@@ -29,3 +29,4 @@ npm install husky dan aktifkannya di package_json
 husky disini itu memaksa kita saat error atau ada funcion tdk terpakai tidak bisa dipush
 
 install jest untuk uni testing
+husky eslit di rapihkan
