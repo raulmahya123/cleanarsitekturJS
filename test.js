@@ -1,3 +1,3 @@
 function main () {
-  return 123
+  return asjdklbashjgdbvhjas
 }
