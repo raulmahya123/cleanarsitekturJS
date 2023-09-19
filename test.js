@@ -1,3 +1,3 @@
 function main(){
-    console.log(:);
+    console.log("Hello World!");
 }
