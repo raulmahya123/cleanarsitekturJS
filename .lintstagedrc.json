@@ -1,0 +1,6 @@
+{
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "standard --fix",
+      "git add"
+    ]
+  }
