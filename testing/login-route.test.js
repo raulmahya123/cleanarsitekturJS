@@ -19,4 +19,3 @@ describe('Login Router', () => {
     expect(httpResponse.statusCode).toBe(400)
   })
 })
-

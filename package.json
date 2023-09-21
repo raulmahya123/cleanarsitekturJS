@@ -7,14 +7,15 @@
     "pre-commit": "lint-staged",
     "prepare": "husky install",
     "lint": "eslint . --ignore-path .gitignore --fix src",
-    "test": "jest --forceExit --detectOpenHandles --maxWorkers=1"
+    "test": "jest --forceExit --detectOpenHandles --maxWorkers=1",
+    "coverage": "npx jest --coverage --forceExit --detectOpenHandles --maxWorkers=1"
   },
   "standard": {
     "ignore": [
       "test"
     ]
   },
-  "author": "",
+  "author": "METODE CLEAN ARCHITECTURE",
   "license": "ISC",
   "devDependencies": {
     "describe": "^1.2.0",
