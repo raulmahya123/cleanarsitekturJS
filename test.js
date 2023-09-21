@@ -11,6 +11,7 @@ const logger = winston.createLogger({
     new winston.transports.Console()
   ]
 })
+console.log('Hello World!')
 // ...
 app.listen(port, () => {
   logger.info(`Server is listening on port ${port}`)
