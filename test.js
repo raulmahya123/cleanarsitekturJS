@@ -1,7 +1,21 @@
 const express = require('express')
-const mongoose = require('mongoose')
-const AccountModel = mongoose.model('Account')
+const AccountModel = require('./model/account')
+const app = express()
+const port = 3000
+const winston = require('winston')
 
+const logger = winston.createLogger({
+  level: 'info',
+  format: winston.format.simple(),
+  transports: [
+    new winston.transports.Console()
+  ]
+})
+// ...
+app.listen(port, () => {
+  logger.info(`Server is listening on port ${port}`)
+  logger.info(`http://localhost:${port}`)
+})
 module.exports = () => {
   const signUpRouter = new SignUpRouter() // Create an instance of SignUpRouter
   const router = express.Router()
