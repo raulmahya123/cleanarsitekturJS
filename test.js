@@ -1,5 +1,5 @@
 const express = require('express')
-const AccountModel = require('./model/account')
+const AccountModel = require('./src/model/account')
 const app = express()
 const port = 3000
 const winston = require('winston')
