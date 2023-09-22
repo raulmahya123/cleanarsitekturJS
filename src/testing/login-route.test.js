@@ -7,12 +7,12 @@ class LoginRouter {
     }
   }
 }
-describe('Login Router', () => {
-  test('Should return 400 if no email is provided', async () => {
+describe("Login Router", () => {
+  test("Should return 400 if no email is provided", async () => {
     const sut = new LoginRouter();
     const httpRequest = {
       body: {
-        password: 'any_password',
+        password: "any_password",
       },
     };
     const httpResponse = sut.route(httpRequest);
