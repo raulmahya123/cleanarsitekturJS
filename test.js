@@ -18,8 +18,9 @@ app.listen(port, () => {
 })
 module.exports = () => {
   const signUpRouter = new SignUpRouter() // Create an instance of SignUpRouter
-  const router = express.Router()
   console.log('signUpRouter', signUpRouter)
+
+  const router = express.Router()
   router.post('/signup', ExpressRouterAdapter.adapt(signUpRouter))
 
   return router
