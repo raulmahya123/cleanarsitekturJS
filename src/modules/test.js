@@ -22,7 +22,6 @@ module.exports = () => {
 
   return router;
 };
-
 class ExpressRouterAdapter {
   static adapt(router) {
     return async (req, res) => {
