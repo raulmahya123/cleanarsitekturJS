@@ -11,7 +11,6 @@ const logger = winston.createLogger({
     new winston.transports.Console()
   ]
 })
-console.log('Hello World!')
 // ...
 app.listen(port, () => {
   logger.info(`Server is listening on port ${port}`)
@@ -20,7 +19,7 @@ app.listen(port, () => {
 module.exports = () => {
   const signUpRouter = new SignUpRouter() // Create an instance of SignUpRouter
   const router = express.Router()
-
+  console.log('signUpRouter', signUpRouter)
   router.post('/signup', ExpressRouterAdapter.adapt(signUpRouter))
 
   return router
