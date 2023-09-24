@@ -11,8 +11,8 @@
     "coverage": "npx jest --coverage --forceExit --detectOpenHandles --maxWorkers=1"
   },
   "standard": {
-    "ignore": [
-      "test"
+    "env": [
+      "jest"
     ]
   },
   "author": "METODE CLEAN ARCHITECTURE",
