@@ -30,3 +30,12 @@ husky disini itu memaksa kita saat error atau ada funcion tdk terpakai tidak bis
 
 install jest untuk uni testing
 husky eslit di rapihkan
+
+# ini reponse benar  
+sut.route(httpRequest)
+    expect(authUseCaseSpy.email).toBe(httpRequest.body.email)
+    expect(authUseCaseSpy.password).toBe(httpRequest.body.password)
+
+# ini respon salah
+const httpResponse = sut.route(httpRequest)
+    expect(httpResponse.statusCode).toBe(401)
